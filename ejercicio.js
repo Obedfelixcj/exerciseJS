@@ -18,14 +18,16 @@ console.log(frutasSeleccionadas);
 
 //.map
 const numeros = [5, 10, 15, 20, 25];
+console.log("Numeros Mapeados +10: ");
 
 const numerosModificados = numeros.map((numero, index) => {
   const numeroModificado = numero + 10;
-  console.log(`Índice ${index}: ${numeroModificado}`);
+  console.log(`${index}: ${numeroModificado}`);
   return numeroModificado;
 });
 
 //concat
+console.log("Arreglos concatenados: ");
 const arreglo1 = ['H', 'I', 'J'];
 const arreglo2 = ['K', 'L', 'M'];
 
@@ -34,6 +36,7 @@ const arregloConcatenado = arreglo1.concat(arreglo2);
 console.log(arregloConcatenado);
 
 //includes
+console.log("Validar si existe el elemento francia: ");
 const paises = ["Mexico", "USA", "Francia"];
 
 const existeFrancia = paises.includes("Francia");
